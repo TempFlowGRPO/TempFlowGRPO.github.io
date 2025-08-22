@@ -129,9 +129,13 @@
         <h2 class="title is-3">🆕 News</h2>
         <div class="content has-text-justified">
           <blockquote>
-            <p>We have presented an improved <strong>Flow-GRPO</strong> method, <strong>TempFlow-GRPO</strong>.🔥🔥🔥</p>
+            <p>We have presented an improved <strong>Flow-GRPO</strong> method, <strong>TempFlow-GRPO</strong>. We will release our code soon!🔥🔥🔥</p>
             <ul>
               <li><strong>[2025-08-06]</strong> We have released the first version of our paper. 🔥🔥🔥</li>
+              <li><strong>[2025-08-11]</strong> Thanks <a href="https://jieliu.site/">Jie Liu's</a> comments for our paper. We will release the 1024 Flux RL model in the month. 🔥🔥🔥</li>
+              <li><strong>[2025-08-14]</strong> Our method also achieves better performance in FLUX 1024px with HPSv3 (based on Qwen2-VL) as reward, blue is TempFlow-GRPO and Purple is Flow-GRPO Fixed. 🔥🔥🔥</li>
+              <img width="420" height="203" alt="image" src="https://github.com/user-attachments/assets/fe2518c3-cd01-42d6-9564-8a357659a587" />
+              <li><strong>[2025-08-20]</strong> We have released the first version of our paper on Hugging Face. 🔥🔥🔥</li>
             </ul>
           </blockquote>
         </div>
@@ -141,8 +145,29 @@
 </section>
 <!-- End news section -->
 
-<!-- Experimental Performance section -->
 <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">🚀 Updates</h2>
+        <div class="content has-text-justified">
+          <p>
+            To support research and the open-source community, we will release the entire project—including datasets, training pipelines, and model weights. Thank you for your patience and continued support! ☀️
+          </p>
+          <ul>
+            <li><input type="checkbox" checked disabled> Release arXiv paper</li>
+            <li><input type="checkbox" checked disabled> Release GitHub repo</li>
+            <li><input type="checkbox" disabled> Release training code</li>
+            <li><input type="checkbox" disabled> Release model checkpoints</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experimental Performance section -->
+<section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -168,13 +193,35 @@
 <!-- Visualization section -->
 <section class="section hero">
   <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">📺 Visualization</h2>
-        <div class="content has-text-centered">
-          <img src="static/images/example.jpg" alt="Visualization" style="width: 1024px; max-width: 100%; height: auto;">
-          <p>For more details please read our paper.<br>
-          <a href="https://arxiv.org/pdf/2508.04324" target="_blank">Download</a></p>
+    <div class="columns is-centered">
+      <div class="column is-full"> <!-- 改为 is-full 占据整个宽度 -->
+        <h2 class="title is-3 has-text-centered">📺 Visualization</h2>
+        <div class="content" style="margin: 0; max-width: 100%;">      
+          <div style="display: flex; gap: 10px; width: 100%; margin: 0 -10px;"> <!-- 减小间距到10px -->
+            <div style="flex: 1; padding: 0 10px;"> <!-- 减小内边距 -->
+              <figure style="margin: 0;">
+                <img src="static/images/example.jpg" alt="SD3.5 Visualization" style="width: 100%; height: auto;">
+                <figcaption class="has-text-centered"><strong>SD3.5</strong></figcaption>
+              </figure>
+            </div>
+
+            <div style="flex: 1; padding: 0 10px;">
+              <figure style="margin: 0;">
+                <div class="columns is-multiline is-mobile" style="margin: -5px;"> <!-- 减小网格间距 -->
+                  <div class="column is-half" style="padding: 5px;"><img alt="Flux image 1" style="width: 100%; height: auto;" src="https://github.com/user-attachments/assets/c41b4873-0a43-42a1-a3a4-f4510be1c40a"></div>
+                  <div class="column is-half" style="padding: 5px;"><img alt="Flux image 2" style="width: 100%; height: auto;" src="https://github.com/user-attachments/assets/e33cbbff-c4e6-404b-a45e-01bb78f37522"></div>
+                  <div class="column is-half" style="padding: 5px;"><img alt="Flux image 3" style="width: 100%; height: auto;" src="https://github.com/user-attachments/assets/c804a8ba-b819-4ead-ab72-296485bad88f"></div>
+                  <div class="column is-half" style="padding: 5px;"><img alt="Flux image 4" style="width: 100%; height: auto;" src="https://github.com/user-attachments/assets/00bf85e1-4049-4060-8845-696eb9fb9a3a"></div>
+                </div>
+                <figcaption class="has-text-centered"><strong>Flux</strong></figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <p class="has-text-centered">For more details please read our paper.<br>
+            <a href="https://arxiv.org/pdf/2508.04324" target="_blank">Download</a>
+          </p>
+
         </div>
       </div>
     </div>
