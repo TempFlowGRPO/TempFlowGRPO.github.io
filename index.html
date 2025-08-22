@@ -192,36 +192,41 @@
 
 <!-- Visualization section -->
 <section class="section hero">
-  <div class="container is-max-desktop">
+  <!-- 移除 is-max-desktop 限制 -->
+  <div class="container">
     <div class="columns is-centered">
       <div class="column is-full"> <!-- 改为 is-full 占据整个宽度 -->
         <h2 class="title is-3 has-text-centered">📺 Visualization</h2>
-        <div class="content" style="margin: 0; max-width: 100%;">      
-          <div style="display: flex; gap: 10px; width: 100%; margin: 0 -10px;"> <!-- 减小间距到10px -->
-            <div style="flex: 1; padding: 0 10px;"> <!-- 减小内边距 -->
-              <figure style="margin: 0;">
-                <img src="static/images/example.jpg" alt="SD3.5 Visualization" style="width: 100%; height: auto;">
-                <figcaption class="has-text-centered"><strong>SD3.5</strong></figcaption>
-              </figure>
+        <!-- 移除 content 类，因为它可能添加了额外的边距 -->
+        <div style="margin: 0; padding: 0 40px; width: 100%;">      
+          <div style="display: flex; width: 100%; margin: 0; padding: 0; gap: 40px;"> 
+            <div style="flex: 1; padding: 0; display: flex; flex-direction: column;"> <!-- 添加flex布局 -->
+              <div style="flex: 1; display: flex; align-items: center;"> <!-- 添加居中对齐 -->
+                <figure style="margin: 0; width: 100%;">
+                  <img src="static/images/example.jpg" alt="SD3.5 Visualization" style="width: 100%; height: auto; display: block;">
+                </figure>
+              </div>
+              <figcaption class="has-text-centered" style="margin-top: 10px;"><strong>SD3.5</strong></figcaption>
             </div>
 
-            <div style="flex: 1; padding: 0 10px;">
-              <figure style="margin: 0;">
-                <div class="columns is-multiline is-mobile" style="margin: -5px;"> <!-- 减小网格间距 -->
-                  <div class="column is-half" style="padding: 5px;"><img alt="Flux image 1" style="width: 100%; height: auto;" src="https://github.com/user-attachments/assets/c41b4873-0a43-42a1-a3a4-f4510be1c40a"></div>
-                  <div class="column is-half" style="padding: 5px;"><img alt="Flux image 2" style="width: 100%; height: auto;" src="https://github.com/user-attachments/assets/e33cbbff-c4e6-404b-a45e-01bb78f37522"></div>
-                  <div class="column is-half" style="padding: 5px;"><img alt="Flux image 3" style="width: 100%; height: auto;" src="https://github.com/user-attachments/assets/c804a8ba-b819-4ead-ab72-296485bad88f"></div>
-                  <div class="column is-half" style="padding: 5px;"><img alt="Flux image 4" style="width: 100%; height: auto;" src="https://github.com/user-attachments/assets/00bf85e1-4049-4060-8845-696eb9fb9a3a"></div>
-                </div>
-                <figcaption class="has-text-centered"><strong>Flux</strong></figcaption>
-              </figure>
+            <div style="flex: 1; padding: 0; display: flex; flex-direction: column;">
+              <div style="flex: 1; display: flex; align-items: center;">
+                <figure style="margin: 0; width: 100%;">
+                  <div class="columns is-multiline is-mobile" style="margin: 0;">
+                    <div class="column is-half" style="padding: 2px;"><img alt="Flux image 1" style="width: 100%; height: auto; display: block;" src="https://github.com/user-attachments/assets/c41b4873-0a43-42a1-a3a4-f4510be1c40a"></div>
+                    <div class="column is-half" style="padding: 2px;"><img alt="Flux image 2" style="width: 100%; height: auto; display: block;" src="https://github.com/user-attachments/assets/e33cbbff-c4e6-404b-a45e-01bb78f37522"></div>
+                    <div class="column is-half" style="padding: 2px;"><img alt="Flux image 3" style="width: 100%; height: auto; display: block;" src="https://github.com/user-attachments/assets/c804a8ba-b819-4ead-ab72-296485bad88f"></div>
+                    <div class="column is-half" style="padding: 2px;"><img alt="Flux image 4" style="width: 100%; height: auto; display: block;" src="https://github.com/user-attachments/assets/00bf85e1-4049-4060-8845-696eb9fb9a3a"></div>
+                  </div>
+                </figure>
+              </div>
+              <figcaption class="has-text-centered" style="margin-top: 10px;"><strong>Flux</strong></figcaption>
             </div>
           </div>
 
           <p class="has-text-centered">For more details please read our paper.<br>
             <a href="https://arxiv.org/pdf/2508.04324" target="_blank">Download</a>
           </p>
-
         </div>
       </div>
     </div>
